@@ -2,7 +2,10 @@
   "name": "@analog-demo/source",
   "version": "0.0.0",
   "license": "MIT",
-  "scripts": {},
+  "scripts": {
+    "build": "nx run app:build",
+    "dev": "nx run app:serve"
+  },
   "private": true,
   "dependencies": {
     "@analogjs/content": "1.16.2",
