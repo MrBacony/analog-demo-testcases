@@ -12,6 +12,11 @@ export default defineConfig(({ mode }) => {
   return {
     root: __dirname,
     cacheDir: `../../node_modules/.vite`,
+    ssr: {
+      noExternal: [
+        'nitropack',
+      ]
+    },
     build: {
       outDir: '../../dist/apps/app/client',
       reportCompressedSize: true,
